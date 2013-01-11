@@ -5,7 +5,7 @@ EXTENSION_PACK_URL='http://download.virtualbox.org/virtualbox/4.2.6/Oracle_VM_Vi
 echo 'deb http://download.virtualbox.org/virtualbox/debian precise contrib' | sudo tee --append /etc/apt/sources.list
 wget -q http://download.virtualbox.org/virtualbox/debian/oracle_vbox.asc -O- | sudo apt-key add -
 sudo apt-get update
-sudo apt-get install linux-headers-$(uname -r) build-essential dkms virtualbox
+sudo apt-get --yes install linux-headers-$(uname -r) build-essential dkms virtualbox
 cd /tmp
 wget $EXTENSION_PACK_URL
 sudo VBoxManage extpack install $(basename $EXTENSION_PACK_URL)
