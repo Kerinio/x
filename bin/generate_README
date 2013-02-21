@@ -1,0 +1,14 @@
+#!/bin/bash
+
+r=README.md
+cat <<'EOF' > $r
+scripts that need a short URL
+
+Usage:
+
+EOF
+for f in *.sh; do
+  echo "    \\curl -L https://raw.github.com/felixhummel/x/master/$f | bash" >> $r
+done
+echo >> $r
+
