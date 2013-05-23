@@ -1,5 +1,6 @@
 #!/bin/bash
 # see https://github.com/felixhummel/configs
+cd $HOME
 git clone git://github.com/felixhummel/configs.git
 cd configs
 git submodule update --init
