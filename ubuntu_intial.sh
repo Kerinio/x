@@ -20,5 +20,6 @@ lsof
 whois
 jnettop
 rsync
+tree
 ' | sudo xargs -P 1 apt-get --yes install 
 
