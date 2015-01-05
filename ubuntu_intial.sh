@@ -4,7 +4,7 @@
 sudo apt-get update
 
 # looks creepy, but easier to add/remove packages
-echo 'vim
+echo 'vim-nox
 bash-completion
 wajig
 python-optcomplete
