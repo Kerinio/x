@@ -1,7 +1,7 @@
 #!/bin/bash
 # see https://github.com/felixhummel/configs
 cd $HOME
-git clone https://github.com/Kerinio/configs.git
+git clone https://github.com/kerinio/configs.git
 cd configs
 git submodule update --init
 ./init --force
