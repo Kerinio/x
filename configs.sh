@@ -1,5 +1,5 @@
 #!/bin/bash
-# see https://github.com/felixhummel/configs
+# see https://github.com/kerinio/configs
 cd $HOME
 git clone https://github.com/kerinio/configs.git
 cd configs
